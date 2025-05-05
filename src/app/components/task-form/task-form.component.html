@@ -1,0 +1,22 @@
+<h2>Criar nova tarefa</h2>
+
+<form (ngSubmit)="createTask()" #taskForm="ngForm">
+  <label>Titulo:</label>
+  <input name="title" [(ngModel)]="task.title" required>
+
+  <label>Descrição:</label>
+  <input name="description" [(ngModel)]="task.description" required>
+
+  <label>Responsável:</label>
+  <input name="responsible" [(ngModel)]="task.responsible" required>
+
+  <label>Prioridade:</label>
+  <select name="priority" [(ngModel)]="task.priority" required>
+    <option value="L">Baixa</option>
+    <option value="M">Média</option>
+    <option value="H">Alta</option>
+  </select>
+
+  <button type="submit">{{ 'Criar' }}</button>
+
+</form>

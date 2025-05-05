@@ -1,0 +1,22 @@
+<h2>Editar tarefa</h2>
+
+<form (ngSubmit)="editTask()">
+  <label>Titulo:</label>
+  <input name="title" [(ngModel)]="taskEdited.title" >
+
+  <label>Descrição:</label>
+  <input name="description" [(ngModel)]="taskEdited.description" >
+
+  <label>Responsável:</label>
+  <input name="responsible" [(ngModel)]="taskEdited.responsible" >
+
+  <label>Prioridade:</label>
+  <select name="priority" [(ngModel)]="taskEdited.priority" >
+    <option value="L">Baixa</option>
+    <option value="M">Média</option>
+    <option value="H">Alta</option>
+  </select>
+
+  <button type="submit">{{ 'Confirmar' }}</button>
+
+</form>
