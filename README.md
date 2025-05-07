@@ -13,7 +13,7 @@ Aplicação frontend para gerenciamento de tarefas (TODO), desenvolvida com Angu
 ### Como rodar
 Os repositórios tanto do frontend quanto do backend possuem um Dockerfile já configurado para um ambiente de desenvolvimento.
 
-Para rodar o projeto usando as imagens no Docker Hub, basta criar um arquivo docker-compose.yml. As imagens do frontend e do backend serão baixadas no Docker Hub e os containers estarão prontos pra execução.
+Porém é possível rodar o projeto usando as imagens no Docker Hub, basta criar um arquivo docker-compose.yml. As imagens do frontend e do backend serão baixadas no Docker Hub e os containers estarão prontos pra execução.
 ```
 services:
   backend:
