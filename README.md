@@ -8,4 +8,4 @@ Aplicação frontend para gerenciamento de tarefas (TODO), desenvolvida com Angu
 - **Angular Material**
 
 ### Repositório do Backend
-🔗 [Todo (Backend)](https://github.com/Matheus-Faneco/todo-backend)
+🔗 [Todo (Backend)](https://github.com/Matheus-Faneco/todo-django)
