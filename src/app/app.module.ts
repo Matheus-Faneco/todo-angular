@@ -13,6 +13,12 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {MatToolbar} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -32,6 +38,13 @@ import {MatToolbar} from '@angular/material/toolbar';
     MatButton,
     ReactiveFormsModule,
     MatToolbar,
+    MatListModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

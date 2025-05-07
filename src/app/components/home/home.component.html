@@ -3,7 +3,7 @@
 <ul>
   @for (task of tasks; track task){
     <li>{{ task.title }} -- {{ task.description }} -- {{ task.responsible }} -- {{ task.priority }}</li>
-    <button [routerLink]="['/editar-tarefa', task.id]" >Editar</button>
+    <button [routerLink]="['editar-tarefa', task.id]" >Editar</button>
     <button (click)="deleteTask(task.id)" >Deletar</button>
   }
 </ul>

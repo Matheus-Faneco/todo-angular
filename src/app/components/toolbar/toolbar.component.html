@@ -1,5 +1,5 @@
-<mat-toolbar>
-  <span>TODO-LIST</span>
-  <span  routerLink="/login" (click)="logout()">Logout</span>
+<mat-toolbar color="primary" class="toolbar">
+  <span class="app-title">Minhas Tarefas</span>
+  <button mat-button color="accent" routerLink="/login" (click)="logout()">Sair</button>
 </mat-toolbar>
 <router-outlet/>

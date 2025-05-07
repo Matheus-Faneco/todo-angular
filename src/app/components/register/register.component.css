@@ -1,0 +1,26 @@
+.register-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.register-card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.register-button {
+  width: 100%;
+}

@@ -8,6 +8,7 @@ import {RegisterComponent} from './components/register/register.component';
 import {ToolbarComponent} from './components/toolbar/toolbar.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: '/login', pathMatch: 'full' },
   {path: 'login', component: LoginComponent},
   {path: 'cadastro', component: RegisterComponent},
   {

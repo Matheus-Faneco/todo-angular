@@ -1,15 +1,24 @@
-<form [formGroup]="form" (submit)="submit()">
-  <h1>Cadastro</h1>
+<div class="register-container">
+  <mat-card class="register-card">
+    <h1 class="register-title">Cadastro</h1>
 
-  <label>Nome:</label>
-  <input formControlName="name" placeholder="Nome" required>
+    <form [formGroup]="form" (submit)="submit()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="name" placeholder="Nome" required>
+      </mat-form-field>
 
-  <label>Email:</label>
-  <input formControlName="email" placeholder="Email" required>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="Email" required>
+      </mat-form-field>
 
-  <label>Senha:</label>
-  <input formControlName="password" placeholder="Senha" required>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Senha</mat-label>
+        <input matInput type="password" formControlName="password" placeholder="Senha" required>
+      </mat-form-field>
 
-  <button type="submit">Cadastrar</button>
-
-</form>
+      <button mat-raised-button color="primary" class="register-button" type="submit">Cadastrar</button>
+    </form>
+  </mat-card>
+</div>

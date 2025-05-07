@@ -1,22 +1,33 @@
-<h2>Editar tarefa</h2>
+<div class="form-container">
+  <mat-card class="task-form-card">
+    <h2 class="form-title">Editar Tarefa</h2>
 
-<form (ngSubmit)="editTask()">
-  <label>Titulo:</label>
-  <input name="title" [(ngModel)]="taskEdited.title" >
+    <form (ngSubmit)="editTask()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Título</mat-label>
+        <input matInput name="title" [(ngModel)]="taskEdited.title" required>
+      </mat-form-field>
 
-  <label>Descrição:</label>
-  <input name="description" [(ngModel)]="taskEdited.description" >
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Descrição</mat-label>
+        <input matInput name="description" [(ngModel)]="taskEdited.description" required>
+      </mat-form-field>
 
-  <label>Responsável:</label>
-  <input name="responsible" [(ngModel)]="taskEdited.responsible" >
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Responsável</mat-label>
+        <input matInput name="responsible" [(ngModel)]="taskEdited.responsible" required>
+      </mat-form-field>
 
-  <label>Prioridade:</label>
-  <select name="priority" [(ngModel)]="taskEdited.priority" >
-    <option value="L">Baixa</option>
-    <option value="M">Média</option>
-    <option value="H">Alta</option>
-  </select>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Prioridade</mat-label>
+        <mat-select name="priority" [(ngModel)]="taskEdited.priority" required>
+          <mat-option value="L">Baixa</mat-option>
+          <mat-option value="M">Média</mat-option>
+          <mat-option value="H">Alta</mat-option>
+        </mat-select>
+      </mat-form-field>
 
-  <button type="submit">{{ 'Confirmar' }}</button>
-
-</form>
+      <button mat-raised-button color="primary" type="submit">Confirmar</button>
+    </form>
+  </mat-card>
+</div>
