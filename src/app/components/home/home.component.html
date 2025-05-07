@@ -1,5 +1,5 @@
 <h1>Lista de Tarefas</h1>
-<button routerLink="/adicionar-tarefa">Criar tarefa</button>
+<button routerLink="adicionar-tarefa">Criar tarefa</button>
 <ul>
   @for (task of tasks; track task){
     <li>{{ task.title }} -- {{ task.description }} -- {{ task.responsible }} -- {{ task.priority }}</li>

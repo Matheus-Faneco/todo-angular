@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {TaskService} from '../../services/task.service';
 import { Task } from '../../models/task';
 import {UserService} from '../../services/user.service';
+import {Emitters} from '../../emitters/emitters';
 
 @Component({
   selector: 'app-home',
@@ -31,8 +32,13 @@ export class HomeComponent implements OnInit {
       withCredentials: true
     }).subscribe(res => {
       console.log(res);
+      Emitters.authEmitter.emit(true)
     },
-      err => console.log(err)
+      err => {
+      console.log(err);
+      Emitters.authEmitter.emit(false);
+
+    }
       )
 
     this.taskService.getTasks().subscribe({

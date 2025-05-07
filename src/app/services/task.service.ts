@@ -21,8 +21,8 @@ export class TaskService {
     return this.http.get<Task>(`${this.taskUrl}${id}`);
   }
 
-  postTask(task: Task): Observable<Task>{
-    return this.http.post<Task>(this.taskUrl, task);
+  postTask(task: Task, option?: Object): Observable<Task>{
+    return this.http.post<Task>(this.taskUrl, task, option);
   }
 
   updateTask(id: number, task: Task): Observable<Task> {

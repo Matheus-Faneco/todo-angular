@@ -47,6 +47,7 @@ export class TaskEditComponent implements OnInit {
         console.log("editado com sucesso", newTask);
       }
     })
+    window.location.reload();
     this.router.navigate(['/home']);
   }
 

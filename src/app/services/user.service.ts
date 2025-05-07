@@ -28,4 +28,8 @@ export class UserService {
     return this.http.post<User>(this.userLoginUrl, user, option);
   }
 
+  logoutUser(option?: Object): Observable<any> {
+    return this.http.post<any>(this.userLogoutUrl, {}, option);
+  }
+
 }

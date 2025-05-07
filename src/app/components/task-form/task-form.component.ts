@@ -26,7 +26,7 @@ export class TaskFormComponent {
   createTask(){
     this.taskService.postTask(this.task).subscribe({
       next: (newTask) => {
-        console.log("Nova tarefa criada:", newTask);
+        console.log("Nova tarefa criada:", newTask, {withCredentials: true});
         this.task = newTask;
         }
       })

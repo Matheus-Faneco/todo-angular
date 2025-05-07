@@ -11,6 +11,8 @@ import { TaskEditComponent } from './components/task-edit/task-edit.component';
 import {MatButton} from "@angular/material/button";
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import {MatToolbar} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { RegisterComponent } from './components/register/register.component';
     TaskFormComponent,
     TaskEditComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { RegisterComponent } from './components/register/register.component';
     FormsModule,
     MatButton,
     ReactiveFormsModule,
+    MatToolbar,
   ],
   providers: [],
   bootstrap: [AppComponent]
