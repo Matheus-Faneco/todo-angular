@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { TaskFormComponent } from './components/task-form/task-form.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { TaskEditComponent } from './components/task-edit/task-edit.component';
 import {MatButton} from "@angular/material/button";
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,15 +18,17 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     TaskFormComponent,
     TaskEditComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        HttpClientModule,
-        FormsModule,
-        MatButton,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    MatButton,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

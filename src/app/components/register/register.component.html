@@ -1,5 +1,8 @@
 <form [formGroup]="form" (submit)="submit()">
-  <h1>Login</h1>
+  <h1>Cadastro</h1>
+
+  <label>Nome:</label>
+  <input formControlName="name" placeholder="Nome" required>
 
   <label>Email:</label>
   <input formControlName="email" placeholder="Email" required>
@@ -7,6 +10,6 @@
   <label>Senha:</label>
   <input formControlName="password" placeholder="Senha" required>
 
-  <button type="submit">Login</button>
+  <button type="submit">Cadastrar</button>
 
 </form>
