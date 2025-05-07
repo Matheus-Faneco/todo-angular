@@ -1,9 +1,17 @@
-<h1>Lista de Tarefas</h1>
-<button routerLink="adicionar-tarefa">Criar tarefa</button>
-<ul>
-  @for (task of tasks; track task){
-    <li>{{ task.title }} -- {{ task.description }} -- {{ task.responsible }} -- {{ task.priority }}</li>
-    <button [routerLink]="['editar-tarefa', task.id]" >Editar</button>
-    <button (click)="deleteTask(task.id)" >Deletar</button>
-  }
-</ul>
+<div>
+  <h1>Lista de Tarefas</h1>
+  <button mat-raised-button color="primary" class="create-button" routerLink="adicionar-tarefa">Criar tarefa</button>
+
+  <ul class="task-list">
+    @for (task of tasks; track task) {
+      <li class="task-item">
+        <mat-checkbox class="task-checkbox"></mat-checkbox>
+        {{ task.title }} - {{ task.description }} ({{ task.responsible }}) - {{ task.priority }}
+        <div class="action-buttons">
+          <button class="edit-button" mat-raised-button [routerLink]="['editar-tarefa', task.id]">Editar</button>
+          <button mat-raised-button  class="delete-button" (click)="deleteTask(task.id)">Deletar</button>
+        </div>
+      </li>
+    }
+  </ul>
+</div>

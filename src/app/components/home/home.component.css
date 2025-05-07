@@ -1,0 +1,44 @@
+body {
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.create-button {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.task-list {
+  padding: 0;
+}
+
+.task-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.edit-button {
+  background: blue;
+  color: white;
+}
+
+.delete-button {
+  background: red;
+  color: white;
+}
+
+.action-buttons{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+
+}
